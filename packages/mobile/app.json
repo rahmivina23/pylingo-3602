@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "icon": "./assets/icon.png",
+    "android": {
+      "package": "com.pylingo_m7q2.runable",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "extra": {
+      "apiUrl": "https://pythona-ep5xq9j-preview-4200.runable.site/",
+      "applicationId": "pythona-ep5xq9j",
+      "runableAuthIssuer": "https://api.runable.com/api/auth"
+    },
+    "ios": {
+      "bundleIdentifier": "com.pylingo_m7q2.runable",
+      "supportsTablet": true
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "name": "Pylingo",
+    "slug": "pylingo",
+    "version": "1.0.0",
+    "scheme": "runable-pythona-ep5xq9j",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow Pylingo to hear your spoken Python answers.",
+          "speechRecognitionPermission": "Allow Pylingo to check your spoken Python answers."
+        }
+      ]
+    ]
+  }
+}
